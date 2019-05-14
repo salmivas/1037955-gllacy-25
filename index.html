@@ -6,28 +6,36 @@
   </head>
   <body>
     <header class="main-header">
+      <a class="main-header-logo">
+        <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
+      </a>
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/index-logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
-        </a>
         <ul class="site-navigation">
-          <li class="catalog-link"><a href="catalog.html">Каталог</a></li>
+          <li class="catalog-link">
+            <a href="catalog.html">Каталог</a>
+            <ul class="catalog-list">
+              <li><a href="#"><b>Новинки</b></a></li>
+              <hr>
+              <li href="#">Сливочное</li>
+              <li href="#">Щербеты</li>
+              <li href="#">Фруктовый лёд</li>
+              <li href="#">Мелорин</li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <!-- Место для формы
-          <form class="search">
-          <input type="text">
-          <button type="submit"></button>
-        </form> -->
-        <ul class="user-nabvigation">
-          <li class="login-link">Вход</li>
-        </ul>
-        <div class="basket">
-          <a href="#"><img src="#" alt="Корзина"></a>
-        </div>
       </nav>
-
+      <form class="search">
+        <input type="text">
+        <button type="submit"><img src="img/find.png" alt="Найти"></button>
+      </form>
+      <ul class="user-navigation">
+        <li class="login-link">Вход</li>
+      </ul>
+      <div class="basket">
+        <a href="#"><img src="#" alt="Корзина"></a>
+      </div>
       <div>
         <p class="schedule">С 10 до 20, ежедневно</p>
         <p class="contacts">8 812 450-25-25</p>
@@ -47,26 +55,19 @@
         <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
         <ul class="features-list">
           <li class="feature-item">
-            <h3 class="visually-hidden">Производство</h3>
-            <img src="#" alt="">
             <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
               оборудования и проверенных временем технологий.</p>
           </li>
           <li class="feature-item">
             <h3 class="visually-hidden">Ингредиенты</h3>
-            <img src="#" alt="">
             <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все
               дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
           </li>
           <li class="feature-item">
-            <h3 class="visually-hidden">Постващики</h3>
-            <img src="#" alt="">
             <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас
               связывает долговременное сотрудничество.</p>
           </li>
           <li class="feature-item">
-            <h3 class="visually-hidden">Забота о качестве</h3>
-            <img src="#" alt="">
             <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает
               мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
@@ -83,7 +84,6 @@
         <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить</p>
-        <br>
         <!-- Место для формы
           <input name="email" placeholder="Электронная почта" type="email">
         <button type="submit">Отправить</button> -->
@@ -113,8 +113,9 @@
       </div>
       <div>
         <img src="#" alt="Логотип HTML-Academy">
-        <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2019</p>
+        <p>Сделано в <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a> © 2019</p>
       </div>
     </footer>
   </body>
+
 </html>
