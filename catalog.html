@@ -8,7 +8,7 @@
     <header>
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <img src="img/gllacy_logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
+          <img src="img/gllacy_logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»" aria-label="Логотип магазина «Глейси»">
         </a>
         <ul class="site-navigation">
           <li class="catalog-link"><a href="catalog.html">Каталог</a></li>
@@ -24,7 +24,7 @@
           <li class="login-link">Вход</li>
         </ul>
         <div class="basket">
-          <a href="#"><img src="#" alt="Корзина"></a>
+          <a href="#"><img src="#" aria-label="Корзина" alt="Корзина"></a>
         </div>
       </nav>
 
@@ -168,48 +168,46 @@
         </ul>
       </div>
       <div>
-        <img src="img/htmlacademy_logo.svg" width="108" height="39" alt="Логотип HTML-Academy">
+        <img src="img/htmlacademy_logo.svg" width="108" height="39" alt="Логотип HTML-Academy" aria-label="Логотип HTML-Academy">
         <p>Сделано в <a href="https://htmlacademy.ru/">HTML Academy</a> © 2019</p>
       </div>
     </footer>
 
     <section class="modal modal-cart">
       <h2>Товары в корзине</h2>
-      <form class="order-form">
-        <table class="cart-items">
-          <tr>
-            <td><button class="item-remove" type="button">Удалить</button></td>
-            <td><a class="cart-item cart-item-reference" href="#"><img src="img/creamy_orange-jam_miniature.jpg"
-                  width="33" height="33" alt="Иконка">Пломбир с апельсиновым джемом</a></td>
-            <td>
-              <p class="cart-item cart-item-weight">1,5кг x</p>
-            </td>
-            <td>
-              <p class="cart-item cart-item-price">200 руб.</p>
-            </td>
-            <td>
-              <p class="cart-item cart-item-cost">300 руб.</p>
-            </td>
-          </tr>
-          <tr>
-            <td><button class="item-remove" type="button">Удалить</button></td>
-            <td><a class="cart-item-reference" href="#"><img src="img/creamy-strawberry_white-chocolate_miniature.jpg"
-                  width="33" height="33" alt="Иконка">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-            <td>
-              <p class="cart-item cart-item-weight">1,5кг x</p>
-            </td>
-            <td>
-              <p class="cart-item cart-item-price">200 руб.</p>
-            </td>
-            <td>
-              <p class="cart-item cart-item-cost">450 руб.</p>
-            </td>
-          </tr>
-        </table>
-        <hr>
-        <b>Итого: 750руб.</b>
-        <button class="button" type="submit">Оформить заказ</button>
-      </form>
+      <table class="cart-items">
+        <tr>
+          <td><button class="item-remove" type="button">Удалить</button></td>
+          <td><a class="cart-item cart-item-reference" href="#"><img src="img/creamy_orange-jam_miniature.jpg"
+                width="33" height="33" alt="Иконка">Пломбир с апельсиновым джемом</a></td>
+          <td>
+            1,5кг x
+          </td>
+          <td>
+            200 руб.
+          </td>
+          <td>
+            300 руб.
+          </td>
+        </tr>
+        <tr>
+          <td><button class="item-remove" type="button">Удалить</button></td>
+          <td><a class="cart-item-reference" href="#"><img src="img/creamy-strawberry_white-chocolate_miniature.jpg"
+                width="33" height="33" alt="Иконка">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+          <td>
+            1,5кг x
+          </td>
+          <td>
+            200 руб.
+          </td>
+          <td>
+            450 руб.
+          </td>
+        </tr>
+      </table>
+      <!-- TODO:нижнюю рамку сделать с помощью CSS border-bottom -->
+      <b>Итого: 750руб.</b>
+      <a class="button-like" href="#">Оформить заказ</a>
     </section>
   </body>
 

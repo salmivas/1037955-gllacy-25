@@ -11,7 +11,15 @@
       </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
-          <li class="catalog-link"><a href="catalog.html">Каталог</a></li>
+          <li class="catalog-link"><a href="catalog.html">Каталог</a>
+              <ul class="catalog-list">
+                <li><a href="#"><b>Новинки</b></a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лёд</a></li>
+                <li><a href="#">Мелорин</a></li>
+              </ul>
+            </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
@@ -24,7 +32,7 @@
         </li>
       </ul>
       <div class="basket">
-        <a href="#"><img src="#" alt="Корзина"></a>
+        <p>Корзина</p>
       </div>
       <div>
         <p class="schedule">С 10 до 20, ежедневно</p>
@@ -66,17 +74,19 @@
       <article class="blog-news">
         <h2 class="visually-hidden">Новости блога</h2>
         <h3>Новое в нашем блоге</h3>
-        <b><a href="#">10 способов сервировки фруктовых щербетов к столу</a></b>
+        <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
 
       <section class="subscription">
         <h2 class="visually-hidden">Подписка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
           Обещаем не спамить</p>
-        <label for="subscription-email" class="visually-hidden">Почта для подписки</label>
-        <input class="email subscription-email" id="subscription-email" name="email-address"
-          placeholder="Электронная почта" type="email">
-        <button class="button" type="submit">Отправить</button>
+        <form action="https://echo.htmlacademy.ru" method="post" class="subscription-form">
+          <label for="subscription-email" class="visually-hidden">Почта для подписки</label>
+          <input class="email subscription-email" id="subscription-email" name="email-address"
+            placeholder="Электронная почта" type="email">
+          <button class="button" type="submit">Отправить</button>
+        </form>
       </section>
 
       <section class="location">
@@ -126,21 +136,10 @@
       </form>
     </section>
 
-    <section class="modal modal-catalog">
-      <h2>Каталог типов мороженного</h2>
-      <ul class="catalog-list">
-        <li><a href="#"><b>Новинки</b></a></li>
-        <li><a href="#">Сливочное</a></li>
-        <li><a href="#">Щербеты</a></li>
-        <li><a href="#">Фруктовый лёд</a></li>
-        <li><a href="#">Мелорин</a></li>
-      </ul>
-    </section>
-
     <section class="modal modal-search">
       <h2>Поиск</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <label class="visually-hidden">
+        <label>
           Найти
           <input class="search-field" type="text" name="search" placeholder="Что ищем?">
         </label>
@@ -166,8 +165,8 @@
             placeholder="Напишите что-нибудь..."></textarea>
         </p>
         <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="reset">Закрыть</button>
       </form>
-      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
 
