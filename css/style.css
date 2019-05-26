@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial,  sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #849d8f;
+  background-image: url("/img/index_background.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+/* .visually-hidden,
+.modal {
+  display: none;
+} */
+
+.main-navigation {
+  line-height: 18px;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.user-navigation a {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+
+.catalog-list {
+  background-color: #f8f7f4;
+}
+
+.catalog-list a {
+  font: inherit;
+  color: #323232;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.schedule {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.contacts {
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+}
+
+.page-title {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+}
+
+.catalog-item-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.catalog-item-title a {
+  color: #ffffff;
+  text-align: center;
+}
+
+.features {
+  color: #323232;
+
+  background-color: #eee4cc;
+  background-image: url("/img/wafer_background.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.features b {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.features-list,
+.catalog-list {
+  list-style: none;
+}
+
+.blog-news {
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url("/img/strawberry-mint_icecream-cone.jpg");
+}
+
+.blog-news a {
+  color: #323232;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.subscription {
+  color: #323232;
+
+  background-color: #f8f7f4;
+  background-image: url("/img/subscription_background.png");
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  vertical-align: middle;
+  color: #ffffff;
+  size: 18px;
+  line-height: 24px;
+}
+
+.subscription-email {
+  font: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+}
+
+.socials ul,
+.footer-middle ul {
+  list-style: none;
+}
+
+.footer-elements {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.socials {
+  text-align: center;
+}
+
+.footer-elements a {
+  color: #ffffff;
+}
+
+.footer-elements a:hover,
+.footer-elements a:active,
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+  color: #ffbc9e;
+}
+
+.modal {
+  font: inherit;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.search-field,
+.user-login,
+.user-password {
+  font: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+
+  background-color: #ffffff;
+}
+
+.login-password-actions a {
+  color: #323232;
+}
+
+.feedback-form-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea[placeholder] {
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
