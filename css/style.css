@@ -9,15 +9,39 @@ body {
   color: #ffffff;
 
   background-color: #849d8f;
-  background-image: url("/img/index_background.png");
   background-position: 0 0;
   background-repeat: no-repeat;
 }
 
-/* .visually-hidden,
-.modal {
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* .modal {
   display: none;
-} */
+}  */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .main-navigation {
   line-height: 18px;
@@ -41,14 +65,9 @@ body {
   text-align: center;
 }
 
-.catalog-list {
-  background-color: #f8f7f4;
-}
-
 .catalog-list a {
   font: inherit;
   color: #323232;
-  text-decoration: none;
   font-size: 14px;
   line-height: 16px;
 }
@@ -99,7 +118,7 @@ body {
   color: #323232;
 
   background-color: #eee4cc;
-  background-image: url("/img/wafer_background.png");
+  background-image: url("img/wafer_background.png");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -119,7 +138,7 @@ body {
   color: #323232;
 
   background-color: #ffffff;
-  background-image: url("/img/strawberry-mint_icecream-cone.jpg");
+  background-image: url("img/strawberry-mint_icecream-cone.jpg");
 }
 
 .blog-news a {
@@ -133,20 +152,17 @@ body {
   color: #323232;
 
   background-color: #f8f7f4;
-  background-image: url("/img/subscription_background.png");
+  background-image: url("img/subscription_background.png");
 }
 
 .button {
-  font: inherit;
   text-align: center;
-  vertical-align: middle;
   color: #ffffff;
   size: 18px;
   line-height: 24px;
 }
 
 .subscription-email {
-  font: inherit;
   font-size: 16px;
   line-height: 24px;
   color: #999999;
@@ -157,6 +173,7 @@ body {
 .socials ul,
 .footer-middle ul {
   list-style: none;
+  padding-left: 0px;
 }
 
 .footer-elements {
@@ -181,7 +198,6 @@ body {
 }
 
 .modal {
-  font: inherit;
   color: #323232;
 
   background-color: #f8f7f4;
@@ -190,7 +206,6 @@ body {
 .search-field,
 .user-login,
 .user-password {
-  font: inherit;
   font-size: 14px;
   line-height: 24px;
   color: #999999;
@@ -210,7 +225,7 @@ body {
 
 .feedback-form input[type="text"],
 .feedback-form input[type="email"],
-.feedback-form textarea[placeholder] {
+.feedback-form textarea:placeholder-shown {
   font-size: 16px;
   line-height: 24px;
   color: #999999;
