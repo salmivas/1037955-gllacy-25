@@ -31,9 +31,10 @@ a {
   text-decoration: none;
 }
 
-/* .modal {
+.modal,
+.catalog-menu {
   display: none;
-}  */
+} 
 
 .visually-hidden {
   position: absolute;
@@ -54,7 +55,9 @@ a {
 
 .site-navigation a {
   font-weight: 700;
+  line-height: 18px;
   color: #ffffff;
+  text-decoration: underline;
 }
 
 .user-navigation a {
@@ -65,7 +68,7 @@ a {
   text-align: center;
 }
 
-.catalog-list a {
+.catalog-menu a {
   font: inherit;
   color: #323232;
   font-size: 14px;
@@ -118,7 +121,7 @@ a {
   color: #323232;
 
   background-color: #eee4cc;
-  background-image: url("img/wafer_background.png");
+  background-image: url("../img/wafer_background.png");
   background-position: 0 0;
   background-repeat: repeat;
 }
@@ -130,6 +133,7 @@ a {
 }
 
 .features-list,
+.catalog-menu,
 .catalog-list {
   list-style: none;
 }
@@ -138,7 +142,7 @@ a {
   color: #323232;
 
   background-color: #ffffff;
-  background-image: url("img/strawberry-mint_icecream-cone.jpg");
+  background-image: url("../img/strawberry-mint_icecream-cone.jpg");
 }
 
 .blog-news a {
@@ -152,7 +156,6 @@ a {
   color: #323232;
 
   background-color: #f8f7f4;
-  background-image: url("img/subscription_background.png");
 }
 
 .button {
@@ -229,4 +232,151 @@ a {
   font-size: 16px;
   line-height: 24px;
   color: #999999;
+}
+
+/* Сеточные стили */
+/* body > * {
+  background: rgba(255, 0, 0, 0.3);
+}
+
+body > * > * {
+  background: rgba(255, 255, 0, 0.3);
+}
+
+body > * > * > * {
+  background: rgba(0, 0, 255, 0.3);
+}
+
+body > * > * > * > * {
+  background: rgba(0, 255, 255, 0.3);
+} */
+
+body {
+  min-width: 1200px;
+  min-height: 2416px;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-header {
+  display: flex;
+  min-height: 75px;
+}
+
+.main-header-logo {
+  margin-top: 9px;
+  margin-bottom: -4px;
+}
+
+.main-navigation {
+  min-height: inherit;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: inherit;
+  min-width: 348px;
+  margin: 0;
+  padding: 0;
+  margin-left: 24px;
+}
+
+.user-navigation {
+  margin: 0px 0px 0px 10px;
+  padding: 0;
+}
+
+.basket {
+  margin-left: 10px;
+}
+
+.header-right-block {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.daily-shedule p {
+  margin: 0;
+  padding: 0;
+}
+
+.feature-list {
+  margin: 0;
+  padding: 0;
+}
+
+.info-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.features {
+  margin-bottom: 40px;
+}
+
+.blog-news {
+  width: 560px;
+}
+
+.subscription {
+  width: 560px;
+}
+
+.footer-elements {
+  display: flex;
+  min-height: 60px;
+  padding-top: 18px;
+  padding-bottom: 25px;
+}
+
+.socials ul,
+.footer-middle ul,
+.breadcrumbs,
+.catalog-list {
+  margin: 0;
+  padding: 0;
+}
+
+.made-by p {
+  margin: 0;
+  padding: 0;
+}
+
+.socials {
+  width: 186px;
+  margin-right: 214px; 
+}
+
+.footer-middle {
+  width: 330px;
+  margin-right: auto;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.catalog-item {
+  width: 267px;
+}
+
+.page-title {
+  margin: 0;
+  padding: 0;
+}
+
+.under-header-menu {
+  display: flex;
+  justify-content: space-between;
 }
