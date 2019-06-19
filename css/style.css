@@ -368,12 +368,21 @@ input::placeholder {
 }
 
 .login-password-actions a {
-  display: inline-block;
+  display: block;
   
   font-size: 13px;
-  line-height: 24px;
+  line-height: 20px;
   color: #323232;
   text-decoration: underline #adacaa;
+}
+
+.login-password-actions a:hover {
+  display: block;
+  
+  font-size: 13px;
+  line-height: 20px;
+  color: #e84d37;
+  text-decoration: underline #e84d37;
 }
 
 .login-button:hover > a {
@@ -571,9 +580,28 @@ input::placeholder {
   font-size: 29px;
 }
 
+.catalog-item-title {
+  width: 256px;
+  margin-top: 21px;
+  margin-bottom: 39px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
 .catalog-item-title a {
   color: #ffffff;
-  text-align: center;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.catalog-item-title:hover a,
+.catalog-item-title:active a {
+  color: #ffbc9e;
+
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
 }
 
 /* index-main */
