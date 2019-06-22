@@ -159,7 +159,27 @@
 
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <!-- Место для фильтра. Фильтр по позициям -->
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset class="sort-form">
+              <legend>Сортировка:</legend>
+              <select name="sorting">
+                <option value="popularity">по популярности</option>
+                <option value="cheap">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fatness">по жирности</option>
+              </select>
+            </fieldset>
+            <fieldset class="cost-form">
+              <legend>Цена: 100 руб. – 500 руб.</legend>
+            </fieldset>
+            <fieldset class="fatness-form">
+              <legend>Жирность:</legend>
+            </fieldset>
+            <fieldset class="additives-form">
+              <legend>Наполнители:</legend>
+            </fieldset>
+            <button class="filter-button" type="submit" value="Применить">Применить</button>
+          </form>
         </section>
       </div>
 
@@ -266,6 +286,17 @@
           </ul>
         </div>
       </section>
+      <nav class="catalog-pagination">
+        <ul class="paginator">
+          <li class="back-arrow"></li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li class="forward-arrow"><a href="#"></a></li>
+        </ul>
+      </nav>
     </main>
     <footer class="footer-elements container">
       <div class="socials">
