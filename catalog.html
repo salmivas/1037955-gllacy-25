@@ -171,12 +171,70 @@
             </fieldset>
             <fieldset class="cost-form">
               <legend>Цена: <input type="text"> руб. – <input type="text"> руб.</legend>
+              <div class="range-wrapper">
+                <div class="bar">
+                  <div class="choosen-bar"></div>
+                </div>
+                <div class="toggle toggle-left"></div>
+                <div class="toggle toggle-right"></div>
+                <!-- TODO: :hover {cursor: pointer;} -->
+              </div>
             </fieldset>
             <fieldset class="fatness-form">
               <legend>Жирность:</legend>
+              <ul class="fatness-wrapper">
+                <li class="filter-option">
+                  <label for="fatness-0">
+                    <input class="fatness-radio visually-hidden" type="radio" name="fatness-radio" value="0"
+                      id="fatness-0">0%
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label for="fatness-10">
+                    <input class="fatness-radio visually-hidden" type="radio" name="fatness-radio" value="10"
+                      id="fatness-10" checked>до 10%
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label for="fatness-30">
+                    <input class="fatness-radio visually-hidden" type="radio" name="fatness-radio" value="30"
+                      id="fatness-30">до 30%
+                  </label>
+                </li>
+                <li class="filter-option">
+                  <label for="fatness+30">
+                    <input class="fatness-radio visually-hidden" type="radio" name="fatness-radio" value="30+"
+                      id="fatness+30">Выше 30%
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <fieldset class="additives-form">
               <legend>Наполнители:</legend>
+              <ul>
+                <li class="additive-option">
+                  <label for="chockolate-additive">
+                    <input type="checkbox" name="additive-checkbox" id="chockolate-additive" checked>шоколодные
+                  </label>
+                </li>
+                <li class="additive-option">
+                  <label for="sugar-additive">
+                    <input type="checkbox" name="additive-checkbox" id="sugar-additive" checked>сахарные присыпки
+                  </label>
+                </li>
+                <li class="additive-option">
+                  <label for="fruit-additive">
+                  </label><input type="checkbox" name="additive-checkbox" id="fruit-additive">фрукты
+                </li>
+                <li class="additive-option">
+                  <label for="surop-additive">
+                  </label><input type="checkbox" name="additive-checkbox" id="surop-additive">сиропы
+                </li>
+                <li class="additive-option">
+                  <label for="jam-additive">
+                  </label><input type="checkbox" name="additive-checkbox" id="jam-additive">джемы
+                </li>
+              </ul>
             </fieldset>
             <button class="filter-button" type="submit" value="Применить">Применить</button>
           </form>
@@ -221,8 +279,7 @@
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">
-                <img src="img/creamy_lingonberry-jam.jpg" width="267" height="267" alt="Сливочное с брусничным джемом"
-                >
+                <img src="img/creamy_lingonberry-jam.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
               </a>
               <p class="catalog-item-price">325 ₽<span class="item-price-weight">/кг</span></p>
               <h3 class="catalog-item-title"><a href="#">Сливочное с брусничным джемом</a></h3>
@@ -245,8 +302,7 @@
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">
-                <img src="img/creamy_chocolate.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой"
-                >
+                <img src="img/creamy_chocolate.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
               </a>
               <p class="catalog-item-price">320 ₽<span class="item-price-weight">/кг</span></p>
               <h3 class="catalog-item-title"><a href="#">Сливочное с шоколадной стружкой</a></h3>
@@ -261,8 +317,7 @@
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">
-                <img src="img/creamy_menthol-syrup.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом"
-                >
+                <img src="img/creamy_menthol-syrup.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
               </a>
               <p class="catalog-item-price">435 ₽<span class="item-price-weight">/кг</span></p>
               <h3 class="catalog-item-title"><a href="#">Сливочноe с ментоловым сиропом</a></h3>
@@ -277,8 +332,7 @@
             </li>
             <li class="catalog-item">
               <a href="catalog-item.html">
-                <img src="img/creamy_mint-syrup.jpg" width="267" height="267" alt="Сливочное с мятным сиропом"
-                >
+                <img src="img/creamy_mint-syrup.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
               </a>
               <p class="catalog-item-price">420 ₽<span class="item-price-weight">/кг</span></p>
               <h3 class="catalog-item-title"><a href="#">Сливочное с мятным сиропом</a></h3>
