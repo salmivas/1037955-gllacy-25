@@ -512,6 +512,42 @@ input::placeholder {
   padding: 0;
 }
 
+/* special-offers */
+.slide-title {
+  font-size: 60px;
+  line-height:60.35px;
+}
+
+
+/* presents */
+
+.article-1 {
+  background-color: #8b1d35;
+  background-image: url(../img/raspberry_background.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.article-2 {
+  background-color: #523529;
+  background-image: url(../img/chokolate_background.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.presents-headline {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.present-desc {
+  margin:0;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+
 .under-header-menu {
   display: flex;
   justify-content: space-between;
@@ -543,6 +579,20 @@ input::placeholder {
   font-weight: 700;
   line-height: 41px;
 }
+
+/* filters */
+.filter {
+
+  line-height: 18px;
+}
+
+.filter legend {
+
+  font-size: 14px;
+  line-height: 16px;
+}
+
+
 
 /* catalog */
 .catalog-list {
@@ -777,6 +827,59 @@ input::placeholder {
   border-radius: 5px;
   outline: none;
 }
+
+/* map */
+.location {
+  width: 302px;
+  padding-top: 29px;
+  padding-bottom: 31px;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  background-color: #fffefe;
+
+  color: #323232;
+
+  border-radius: 15px;
+}
+
+.headquarters-adress h3 {
+  margin:0;
+  margin-bottom: 1px;
+
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.headquarters-adress h3:first-child {
+  width: 150px;
+}
+
+.headquarters-adress p {
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.headquarters-adress p:first-of-type {
+  margin-bottom: 18px;
+}
+
+.headquarters-adress span {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+/* pagination-block */
+.catalog-pagination {
+
+  line-height: 18px;
+}
+
 
 /* footer */
 .footer-elements {
@@ -1079,6 +1182,11 @@ input::placeholder {
   margin-left: 7px;
 }
 
+.feedback-button {
+  width: 100%;
+  margin-top: 24px;
+}
+
 .feedback-form .button {
   width: 139px;
   height: 44px;
@@ -1109,4 +1217,22 @@ input::placeholder {
   right: 0;
   width: 18px;
   height: 17px;
+}
+
+.filter-button {
+  display: inline-block;
+  vertical-align: top;
+
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-right: 26px;
+  padding-left: 26px;
+
+  color: #ffffff;
+  font-weight: 500;
+  
+
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 19px; 
 }
