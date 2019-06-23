@@ -34,10 +34,6 @@ a {
   text-decoration: none;
 }
 
-/* p {
-  margin: 0;
-} */
-
 input::placeholder {
   font-weight: 400;
 }

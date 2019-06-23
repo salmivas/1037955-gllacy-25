@@ -150,7 +150,7 @@
       <div class="container">
         <div class="under-header-menu">
           <ul class="breadcrumbs">
-            <li><a href="main.html">Главная</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="catalog.html">Каталог</a></li>
             <li class="breadcrumbs-current">Сливочное</li>
           </ul>
@@ -159,7 +159,7 @@
 
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="post" action="https://echo.htmlacademy.ru">
             <fieldset class="sort-form">
               <legend>Сортировка:</legend>
               <select name="sorting">
@@ -170,7 +170,7 @@
               </select>
             </fieldset>
             <fieldset class="cost-form">
-              <legend>Цена: 100 руб. – 500 руб.</legend>
+              <legend>Цена: <input type="text"> руб. – <input type="text"> руб.</legend>
             </fieldset>
             <fieldset class="fatness-form">
               <legend>Жирность:</legend>
@@ -288,13 +288,13 @@
       </section>
       <nav class="catalog-pagination">
         <ul class="paginator">
-          <li class="back-arrow"></li>
+          <li class="back-arrow"><a href="#">Назад</a></li>
           <li><a href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">4</a></li>
           <li><a href="#">5</a></li>
-          <li class="forward-arrow"><a href="#"></a></li>
+          <li class="forward-arrow"><a href="#">Вперёд</a></li>
         </ul>
       </nav>
     </main>
