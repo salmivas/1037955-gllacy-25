@@ -8,9 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <div class="body-wrapper">
       <div class="container">
         <header class="main-header">
@@ -100,28 +97,31 @@
         <div class="container">
 
           <section class="slider">
+            <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+            <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+            <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
             <h2 class="visually-hidden">Специальные предложения</h2>
             <ul class="slider-list">
-              <li class="slider-item slide" id="slide1">
+              <li class="slider-item slide-1" id="slide1">
                 <img src="img/promo-1.png" alt="Крем-брюле и пломбир с малиновым джемом">
                 <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
                 <a class="button special-offer-button" href="#">Давайте оба!</a>
               </li>
-              <li class="slider-item slide" id="slide2">
+              <li class="slider-item slide-2" id="slide2">
                 <img src="img/promo-2.png" alt="Шоколадный пломбир и лимонный сорбет">
                 <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
                 <a class="button special-offer-button" href="#">Давайте оба!</a>
               </li>
-              <li class="slider-item slide" id="slide3">
+              <li class="slider-item slide-3" id="slide-3">
                 <img src="img/promo-3.png" alt="Пломбир с помадкой и клубничный щербет">
                 <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
                 <a class="button special-offer-button" href="#">Давайте оба!</a>
               </li>
             </ul>
             <div class="slider-controls">
-              <label for="product-1">1</label>
-              <label for="product-2">2</label>
-              <label for="product-3">3</label>
+              <label class="label-1" for="product-1">1</label>
+              <label class="label-2" for="product-2">2</label>
+              <label class="label-3" for="product-3">3</label>
             </div>
           </section>
         </div>
