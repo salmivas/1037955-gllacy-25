@@ -327,7 +327,6 @@ input::placeholder {
 
   border: 2px solid #8fbdec;
   border-radius: 5px;
-  outline: none;
 }
 
 .login-button,
@@ -890,6 +889,7 @@ input::placeholder {
 
   background: url(../img/radio-off.svg) no-repeat;
   background-size: 22px 22px;
+  opacity: 0.8;
 }
 
 .fatness-radio:checked + label::before {
@@ -904,6 +904,7 @@ input::placeholder {
   height: 22px;
   background: url(../img/radio-on.svg) no-repeat;
   background-size: 22px 22px;
+  opacity: 0.8;
 }
 
 .filter-option label {
@@ -946,6 +947,7 @@ input::placeholder {
 
   background: url(../img/checkbox-off.svg) no-repeat;
   background-size: 20px 20px;
+  opacity: 0.8;
 }
 
 .additive-checkbox:checked + label::before {
@@ -960,6 +962,31 @@ input::placeholder {
   height: 20px;
   background: url(../img/checkbox-on.svg) no-repeat;
   background-size: 24px 20px;
+  opacity: 0.8;
+}
+
+.fatness-radio:hover + label::before,
+.fatness-radio:checked:hover + label::before,
+.additive-checkbox:hover + label::before,
+.additive-checkbox:checked:hover + label::before {
+  opacity: 1;
+}
+
+.fatness-radio:disabled + label::before,
+.fatness-radio:checked:disabled + label::before,
+.additive-checkbox:disabled + label::before,
+.additive-checkbox:checked:disabled + label::before {
+  opacity: 0.4;
+}
+
+.fatness-radio:focus + label::before,
+.fatness-radio:checked:focus + label::before,
+.additive-checkbox:focus + label::before,
+.additive-checkbox:checked:focus + label::before {
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 /* catalog */
@@ -1196,7 +1223,6 @@ input::placeholder {
 
   border: 2px solid #8fbdec;
   border-radius: 5px;
-  outline: none;
 }
 
 /* map */
@@ -1544,7 +1570,6 @@ input::placeholder {
 
   border: 2px solid #8fbdec;
   border-radius: 5px;
-  outline: none;
 }
 
 .feedback-comment:placeholder-shown {
@@ -1585,7 +1610,6 @@ input::placeholder {
 
   border: 2px solid #8fbdec;
   border-radius: 5px;
-  outline: none;
 }
 
 .feedback-comment:focus:placeholder-shown {
@@ -1607,7 +1631,6 @@ input::placeholder {
   background-image: linear-gradient( to top, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
   box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border: none;
-  outline: none;
   border-radius: 23px;
 }
 
@@ -1661,7 +1684,6 @@ input::placeholder {
   border: 0;
 
   cursor: pointer;
-  outline: none;
 }
 
 .modal-close::before {
@@ -1691,7 +1713,6 @@ input::placeholder {
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid rgb(255, 255, 255);
   border-radius: 19px; 
-  outline: none;
 }
 
 .filter-button:hover {
