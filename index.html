@@ -26,7 +26,7 @@
                 </ul>
               </li>
               <li class="catalog-link"><a href="#">Доставка и оплата</a></li>
-              <li class="catalog-link"><a href="#">О компании</a></li>
+              <li class="catalog-link"><a href="#">О Компании</a></li>
             </ul>
           </nav>
           <div class="header-right-block">
@@ -88,7 +88,7 @@
         </header>
         <div class="daily-shedule">
           <p class="schedule">С 10 до 20, ежедневно</p>
-          <p class="contacts">8 812 450-25-25</p>
+          <p class="contacts"><a class="contacts-reference">8 812 450-25-25</a></p>
         </div>
       </div>
       <main>
@@ -103,25 +103,25 @@
             <h2 class="visually-hidden">Специальные предложения</h2>
             <ul class="slider-list">
               <li class="slider-item slide-1" id="slide1">
-                <img src="img/promo-1.png" alt="Крем-брюле и пломбир с малиновым джемом">
+                <img src="img/promo-1.png" width="1045" height="881" alt="Крем-брюле и пломбир с малиновым джемом">
                 <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
                 <a class="button special-offer-button" href="#">Давайте оба!</a>
               </li>
               <li class="slider-item slide-2" id="slide2">
-                <img src="img/promo-2.png" alt="Шоколадный пломбир и лимонный сорбет">
+                <img src="img/promo-2.png" width="1065" height="859" alt="Шоколадный пломбир и лимонный сорбет">
                 <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
                 <a class="button special-offer-button" href="#">Давайте оба!</a>
               </li>
               <li class="slider-item slide-3" id="slide-3">
-                <img src="img/promo-3.png" alt="Пломбир с помадкой и клубничный щербет">
+                <img src="img/promo-3.png" width="1079" height="854" alt="Пломбир с помадкой и клубничный щербет">
                 <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
                 <a class="button special-offer-button" href="#">Давайте оба!</a>
               </li>
             </ul>
             <div class="slider-controls">
-              <label class="label-1" for="product-1">1</label>
-              <label class="label-2" for="product-2">2</label>
-              <label class="label-3" for="product-3">3</label>
+              <label class="label-1" for="product-1">Слайд 1</label>
+              <label class="label-2" for="product-2">Слайд 2</label>
+              <label class="label-3" for="product-3">Слайд 3</label>
             </div>
           </section>
         </div>
@@ -196,8 +196,7 @@
 
             <section class="features">
               <h2 class="visually-hidden">Преимущества</h2>
-              <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на
-                развес</b>
+              <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
               <ul class="feature-list">
                 <li class="feature-item">
                   <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного
@@ -245,12 +244,13 @@
         <section class="location">
           <h2 class="visually-hidden">Местонахождение</h2>
           <div class="map">
+            <!-- TODO: прописать tabindex:-1 чтобе не попадал фокус на карту -->
             <div class="container">
               <div class="headquarters-adress">
                 <h3>Aдрес главного офиса и офлайн магазина:</h3>
                 <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
                 <h3>Для заказов по телефону:</h3>
-                <p>8 812 450-25-25</p>
+                <p><a class="contacts-reference-map">8 812 450-25-25</a></p>
                 <span>(с 10 до 20 ежедневно)</span>
                 <a class="button feedback-button" href="feedback.html">Форма обратной связи</a>
               </div>
@@ -308,7 +308,7 @@
         </div>
         <div class="made-by">
           <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy_logo.svg" width="108" height="39" alt="Логотип HTML-Academy"></a>
-          <p>Сделано в <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a> © 2019</p>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</p>
         </div>
       </footer>
 

@@ -132,7 +132,7 @@
       </header>
       <div class="daily-shedule">
         <p class="schedule">С 10 до 20, ежедневно</p>
-        <p class="contacts">8 812 450-25-25</p>
+        <p class="contacts"><a class="contacts-reference">8 812 450-25-25</a></p>
       </div>
     </div>
     <main>
@@ -144,14 +144,14 @@
             <li class="breadcrumbs-current">Сливочное</li>
           </ul>
         </div>
-        <h1 class="page-title">Сливочное мороженное</h1>
+        <h1 class="page-title">Сливочное мороженое</h1>
 
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter" method="post" action="https://echo.htmlacademy.ru">
-            <fieldset class="sort-form">
+            <fieldset>
               <legend>Сортировка:</legend>
-              <select name="sorting">
+              <select class="sort-form" name="sorting">
                 <option value="popularity">по популярности</option>
                 <option value="cheap">сначала недорогие</option>
                 <option value="expensive">сначала дорогие</option>
@@ -159,13 +159,13 @@
               </select>
             </fieldset>
             <fieldset class="cost-form">
-              <legend>Цена: <input type="text" value="100" title="минимальная цена"> руб. – <input type="text" value="500" title="максимальная цена"> руб.</legend>
+              <legend>Цена: <input type="text" value="100" title="минимальная цена" name="min-price"> руб. – <input type="text" value="500" title="максимальная цена" name="max-price"> руб.</legend>
               <div class="range-wrapper">
                 <div class="bar">
                   <div class="choosen-bar"></div>
                 </div>
-                <div class="toggle toggle-left" tabindex="0"></div>
-                <div class="toggle toggle-right" tabindex="0"></div>
+                <div class="toggle toggle-left" tabindex="0" aria-label="сдвинуть назад"></div>
+                <div class="toggle toggle-right" tabindex="0" aria-label="сдвинуть вперёд"></div>
               </div>
             </fieldset>
             <fieldset class="fatness-form">
@@ -193,23 +193,23 @@
               <legend>Наполнители:</legend>
               <ul class="additives-wrapper">
                 <li class="additive-option">
-                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="chockolate-additive" checked>
+                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="chockolate-additive" value="chockolate-additive" checked>
                   <label for="chockolate-additive">шоколодные</label>
                 </li>
                 <li class="additive-option">
-                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="sugar-additive" checked>
+                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="sugar-additive" value="sugar-additive" checked>
                   <label for="sugar-additive">сахарные присыпки</label>
                 </li>
                 <li class="additive-option">
-                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="fruit-additive">
+                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="fruit-additive" value="fruit-additive">
                   <label for="fruit-additive">фрукты</label>
                 </li>
                 <li class="additive-option">
-                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="surop-additive">
+                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="surop-additive" value="surop-additive">
                   <label for="surop-additive">сиропы</label>
                 </li>
                 <li class="additive-option">
-                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="jam-additive">
+                  <input class="additive-checkbox visually-hidden" type="checkbox" name="additive-checkbox" id="jam-additive" value="jam-additive">
                   <label for="jam-additive">джемы</label>
                 </li>
               </ul>
@@ -413,7 +413,7 @@
       </div>
       <div class="made-by">
         <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy_logo.svg" width="108" height="39" alt="Логотип HTML-Academy"></a>
-        <p>Сделано в <a href="https://htmlacademy.ru/" target="_blank">HTML Academy</a> © 2019</p>
+        <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</p>
       </div>
     </footer>
 
