@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
   </head>
+
   <body>
-    <div class="container">
-      <header class="main-header">
+      <header class="main-header container">
         <a class="main-header-logo" href="index.html">
           <img src="img/gllacy_logo.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
         </a>
@@ -81,7 +82,6 @@
               </svg>
               <span>2 товара</span>
             </a>
-
             <section class="modal modal-cart">
               <h2 class="visually-hidden">Товары в корзине</h2>
               <table class="cart-items">
@@ -130,11 +130,10 @@
           </div>
         </div>
       </header>
-      <div class="daily-shedule">
+      <div class="daily-shedule container">
         <p class="schedule">С 10 до 20, ежедневно</p>
         <p class="contacts"><a class="contacts-reference">8 812 450-25-25</a></p>
       </div>
-    </div>
     <main>
       <div class="container">
         <div class="under-header-menu">
@@ -145,7 +144,6 @@
           </ul>
         </div>
         <h1 class="page-title">Сливочное мороженое</h1>
-
         <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter" method="post" action="https://echo.htmlacademy.ru">
@@ -218,7 +216,6 @@
           </form>
         </section>
       </div>
-
       <section class="catalog">
         <h2 class="visually-hidden">Список</h2>
         <div class="container">
@@ -356,7 +353,7 @@
           <li class="page"><a href="#">3</a></li>
           <li class="page"><a href="#">4</a></li>
           <li class="page"><a href="#">5</a></li>
-          <li class="forward-arrow"><a class="visually-hidden" href="#">Вперёд</a>
+          <li class="forward-arrow" tabindex="0"><a class="visually-hidden" href="#">Вперёд</a>
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewbox="0 0 8 12">
               <path fill="#ffffff" d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z" /></svg>
           </li>
@@ -412,12 +409,10 @@
         </ul>
       </div>
       <div class="made-by">
-        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/htmlacademy_logo.svg" width="108" height="39" alt="Логотип HTML-Academy"></a>
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/htmlacademy_logo.svg" width="108" height="39" alt="Логотип HTML-Academy" aria-label="Логотип HTML-Academy"></a>
         <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a> © 2019</p>
       </div>
     </footer>
-
-
   </body>
 
 </html>
