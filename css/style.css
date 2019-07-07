@@ -36,19 +36,19 @@ a {
   text-decoration: none;
 }
 
-input::-webkit-input-placeholder {
+.input::-webkit-input-placeholder {
   font-weight: 400;
 }
 
-input:-ms-input-placeholder {
+.input:-ms-input-placeholder {
   font-weight: 400;
 }
 
-input::-ms-input-placeholder {
+.input::-ms-input-placeholder {
   font-weight: 400;
 }
 
-input::placeholder {
+.input::placeholder {
   font-weight: 400;
 }
 
@@ -333,7 +333,7 @@ input::placeholder {
 .form-wrapper {
   position: absolute;
   top: 37px;
-  right: 0%;
+  right: 0;
   
   padding: 20px 15px;
   
@@ -475,7 +475,7 @@ input::placeholder {
 .modal-cart {
   position: absolute;
   top: 37px;
-  right: 0%;
+  right: 0;
 
   width: 540px;
   padding: 20px 15px;
@@ -756,7 +756,7 @@ input::placeholder {
   padding-bottom: 23px;
 
   background-color: #8b1d35;
-  background-image: url(../img/raspberry_background.jpg);
+  background-image: url("../img/raspberry_background.jpg");
 }
 
 .article-2 {
@@ -764,7 +764,7 @@ input::placeholder {
   padding-bottom: 23px;
 
   background-color: #523529;
-  background-image: url(../img/chokolate_background.jpg);
+  background-image: url("../img/chokolate_background.jpg");
 }
 
 .presents-headline {
@@ -785,7 +785,7 @@ input::placeholder {
 }
 
 .hits .catalog-item::after {
-  content: url(../img/hit.svg);
+  content: url("../img/hit.svg");
 
   top: 0;
   left: 0;
@@ -895,7 +895,7 @@ input::placeholder {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background: url(../img/triangle-down.svg) no-repeat;
+  background: url("../img/triangle-down.svg") no-repeat;
   background-position: right 14px top 50%;
   background-color: rgba(255, 255, 255, 0.2);
   border: none;
@@ -909,7 +909,7 @@ input::placeholder {
 .filters .sort-form:hover {
   color: #323232;
 
-  background: url(../img/triangle-down-black.svg) no-repeat;
+  background: url("../img/triangle-down-black.svg") no-repeat;
   background-color: rgba(255, 255, 255, 0.2);
   background-position: right 14px top 50%;
 }
@@ -1034,7 +1034,7 @@ input::placeholder {
   width: 22px;
   height: 22px;
 
-  background: url(../img/radio-off.svg) no-repeat;
+  background: url("../img/radio-off.svg") no-repeat;
   background-size: 22px 22px;
   opacity: 0.8;
 }
@@ -1049,7 +1049,7 @@ input::placeholder {
 
   width: 22px;
   height: 22px;
-  background: url(../img/radio-on.svg) no-repeat;
+  background: url("../img/radio-on.svg") no-repeat;
   background-size: 22px 22px;
   opacity: 0.8;
 }
@@ -1105,7 +1105,7 @@ input::placeholder {
   width: 23px;
   height: 20px;
 
-  background: url(../img/checkbox-off.svg) no-repeat;
+  background: url("../img/checkbox-off.svg") no-repeat;
   background-size: 20px 20px;
   opacity: 0.8;
 }
@@ -1125,7 +1125,7 @@ input::placeholder {
 
   width: 23px;
   height: 20px;
-  background: url(../img/checkbox-on.svg) no-repeat;
+  background: url("../img/checkbox-on.svg") no-repeat;
   background-size: 24px 20px;
   opacity: 0.8;
 }
@@ -1478,7 +1478,7 @@ input::placeholder {
 
   height: 430px;
 
-  background: #fffeee url(../img/map.png) no-repeat center;
+  background: #fffeee url("../img/map.png") no-repeat center;
 }
 
 .location .container {
@@ -1782,7 +1782,7 @@ input::placeholder {
 }
 
 .footer-middle a:nth-child(1)::before {
-  content: url(../img/heart.svg);
+  content: url("../img/heart.svg");
 
   position: absolute;
   
@@ -1895,7 +1895,6 @@ input::placeholder {
 
   
   font-size: 16px;
-  line-height: 24px;
   color: #323233;
   
   background-color: #ffffff;
@@ -1978,9 +1977,10 @@ input::placeholder {
   font-weight: 700;
   text-align: center;
   background-image: -webkit-gradient( linear, left bottom, left top, from(rgb(202,56,36)), to(rgb(242,104,67)));
-  background-image: -webkit-linear-gradient( bottom, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
-  background-image: -o-linear-gradient( bottom, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
-  background-image: linear-gradient( to top, rgb(202,56,36) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( bottom, rgb(202,56,36) 0, rgb(242,104,67) 100%);
+  background-image: -o-linear-gradient( bottom, rgb(202,56,36) 0, rgb(242,104,67) 100%);
+  background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(202,56,36)), to(rgb(242,104,67)));
+  background-image: linear-gradient( to top, rgb(202,56,36) 0, rgb(242,104,67) 100%);
   -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
           box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border: none;
@@ -1990,18 +1990,20 @@ input::placeholder {
 .button:hover,
 .button:focus {
   background: -webkit-gradient(linear,left top, left bottom,from(#f58669),to(#ec6f5e));
-  background: -webkit-linear-gradient(top,#f58669 0%,#ec6f5e 100%);
-  background: -o-linear-gradient(top,#f58669 0%,#ec6f5e 100%);
-  background: linear-gradient(to bottom,#f58669 0%,#ec6f5e 100%);
+  background: -webkit-linear-gradient(top,#f58669 0,#ec6f5e 100%);
+  background: -o-linear-gradient(top,#f58669 0,#ec6f5e 100%);
+  background: -webkit-gradient(linear,left top, left bottom,color-stop(0, #f58669),to(#ec6f5e));
+  background: linear-gradient(to bottom,#f58669 0,#ec6f5e 100%);
   -webkit-box-shadow: 0 2px 2px #ac1000;
           box-shadow: 0 2px 2px #ac1000;
 }
 
 .button:active {
   background: -webkit-gradient(linear,left top, left bottom,from(#d84732),to(#e1613e));
-  background: -webkit-linear-gradient(top,#d84732 0%,#e1613e 100%);
-  background: -o-linear-gradient(top,#d84732 0%,#e1613e 100%);
-  background: linear-gradient(to bottom,#d84732 0%,#e1613e 100%);
+  background: -webkit-linear-gradient(top,#d84732 0,#e1613e 100%);
+  background: -o-linear-gradient(top,#d84732 0,#e1613e 100%);
+  background: -webkit-gradient(linear,left top, left bottom,color-stop(0, #d84732),to(#e1613e));
+  background: linear-gradient(to bottom,#d84732 0,#e1613e 100%);
   -webkit-box-shadow: inset 0 2px 2px #ac1000;
           box-shadow: inset 0 2px 2px #ac1000;
 }
