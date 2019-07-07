@@ -36,19 +36,19 @@ a {
   text-decoration: none;
 }
 
-.input::-webkit-input-placeholder {
+.common-input::-webkit-input-placeholder {
   font-weight: 400;
 }
 
-.input:-ms-input-placeholder {
+.common-input:-ms-input-placeholder {
   font-weight: 400;
 }
 
-.input::-ms-input-placeholder {
+.common-input::-ms-input-placeholder {
   font-weight: 400;
 }
 
-.input::placeholder {
+.common-input::placeholder {
   font-weight: 400;
 }
 
